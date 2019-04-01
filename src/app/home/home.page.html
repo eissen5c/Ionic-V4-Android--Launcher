@@ -1,14 +1,58 @@
-<ion-header>
+<ion-header (swipe)="swipeEvent($event)">
   <ion-toolbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title text-center>
+      <h4>{{dateandtimenow}}</h4>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    This is Sample or you can use this as template
+    <p>Developed by eissen5c</p>
+
+    <ion-grid>
+	<ion-row>
+		<ion-col>
+		THIS IS SAMPLE ONLY
+		</ion-col>
+	</ion-row>
+      <ion-row>
+	  
+        <ion-col text-center (click)="launchApp(1)" size="4">
+          <ion-icon name="images"></ion-icon>
+          <ion-button expand="block"> Gallery</ion-button>
+        </ion-col>
+		
+        <ion-col text-center (click)="launchApp(3)" size="4">
+          <ion-icon name="camera"></ion-icon>
+          <ion-button expand="block">Camera</ion-button>
+        </ion-col>
+		
+        <ion-col text-center (click)="launchApp(4)" size="4">
+          <ion-icon name="calculator"></ion-icon>
+          <ion-button expand="block">Calculator</ion-button>
+        </ion-col>
+		
+      </ion-row>
+      <ion-row>
+
+      </ion-row>
+
+
+    <!--  <ion-row>
+        <ion-col (click)="launchApp()">
+          <ion-button expand="block"><ion-icon name="wifi"></ion-icon> Wifi Settings</ion-button>
+        </ion-col>
+        <ion-col (click)="launchApp()">
+          <ion-button expand="block"><ion-icon name="bluetooth"></ion-icon> Bluetooth Settings</ion-button>
+        </ion-col>
+        <ion-col (click)="launchApp()">
+          <ion-button expand="block"><ion-icon name="bluetooth"></ion-icon> Bluetooth Settings</ion-button>
+        </ion-col>
+      </ion-row>-->
+    </ion-grid>
   </div>
+
+
 </ion-content>

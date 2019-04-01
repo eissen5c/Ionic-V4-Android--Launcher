@@ -8,6 +8,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AndroidFullScreen } from '@ionic-native/android-full-screen/ngx';
+import { AppLauncher, AppLauncherOptions } from '@ionic-native/app-launcher/ngx';
+import { Hotspot, HotspotNetwork } from '@ionic-native/hotspot/ngx';
+import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +21,10 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
+    AndroidFullScreen,
+    AppLauncher,
+    Hotspot,
+    SQLite,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

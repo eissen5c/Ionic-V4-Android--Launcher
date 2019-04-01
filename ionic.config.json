@@ -1,5 +1,7 @@
 {
   "name": "MRSLauncher",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
